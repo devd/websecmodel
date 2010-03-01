@@ -1,0 +1,303 @@
+<?xml version="1.0"?>
+<alloy>
+
+<view nodetheme="Martha">
+
+<projection> <type name="d/Time"/> </projection>
+
+<defaultnode hideunconnected="yes"/>
+
+<defaultedge/>
+
+<node>
+   <type name="Int"/>
+   <type name="String"/>
+   <type name="univ"/>
+   <type name="d/BADCA"/>
+   <type name="d/Browser"/>
+   <type name="d/c301"/>
+   <type name="d/c302"/>
+   <type name="d/c303"/>
+   <type name="d/c304"/>
+   <type name="d/c305"/>
+   <type name="d/c306"/>
+   <type name="d/c307"/>
+   <type name="d/CookieHeader"/>
+   <type name="d/CORSRequestHeader"/>
+   <type name="d/CORSResponseHeader"/>
+   <type name="d/DELETE"/>
+   <type name="d/fire3Alice"/>
+   <type name="d/fireAlice"/>
+   <type name="d/GET"/>
+   <type name="d/GOODCA"/>
+   <type name="d/HOME"/>
+   <type name="d/HTTP"/>
+   <type name="d/HTTPClient"/>
+   <type name="d/HTTPConformist"/>
+   <type name="d/HTTPEvent"/>
+   <type name="d/HTTPRequestHeader"/>
+   <type name="d/HTTPResponseHeader"/>
+   <type name="d/HTTPS"/>
+   <type name="d/ie7Carol"/>
+   <type name="d/ie8Carol"/>
+   <type name="d/INDEX"/>
+   <type name="d/InternetExplorer"/>
+   <type name="d/LOGIN"/>
+   <type name="d/LOGOUT"/>
+   <type name="d/NetworkEvent"/>
+   <type name="d/NormalPrincipal"/>
+   <type name="d/OPTIONS"/>
+   <type name="d/PASSIVEATTACKER"/>
+   <type name="d/PassivePrincipal"/>
+   <type name="d/POST"/>
+   <type name="d/PUT"/>
+   <type name="d/REDIRECT"/>
+   <type name="d/safBob"/>
+   <type name="d/SecureCookie"/>
+   <type name="d/SetCookieHeader"/>
+   <type name="d/Time"/>
+   <type name="d/WebPrincipal"/>
+   <type name="seq/Int"/>
+   <set name="$STSProtectsCookieLeakage_c" type="d/SecureCookie"/>
+   <set name="$STSProtectsCookieLeakage_e" type="d/Event"/>
+   <set name="$STSProtectsCookieLeakage_ne" type="d/NetworkEndpoint"/>
+   <set name="$STSProtectsCookieLeakage_sc" type="d/ScriptContext"/>
+   <set name="$STSProtectsCookieLeakage_t" type="d/HTTPTransaction"/>
+</node>
+
+<node color="Black">
+   <type name="d/Event"/>
+</node>
+
+<node color="Blue" label="Origin">
+   <type name="d/Origin"/>
+</node>
+
+<node color="Green">
+   <type name="d/Principal"/>
+</node>
+
+<node color="Green" label="HTTPTransaction">
+   <type name="d/HTTPTransaction"/>
+</node>
+
+<node color="Red" label="ScriptContext">
+   <type name="d/ScriptContext"/>
+</node>
+
+<node color="White">
+   <type name="d/RequestAPI"/>
+</node>
+
+<node color="Yellow">
+   <type name="d/HTTPHeader"/>
+</node>
+
+<node hideunconnected="no" shape="Lined Diamond" color="Yellow" label="NetworkEndpoint">
+   <type name="d/NetworkEndpoint"/>
+</node>
+
+<node label="ACTIVEATTACKER">
+   <type name="d/ACTIVEATTACKER"/>
+</node>
+
+<node label="AccessControlAllowCredentials">
+   <type name="d/AccessControlAllowCredentials"/>
+</node>
+
+<node label="AccessControlAllowHeaders">
+   <type name="d/AccessControlAllowHeaders"/>
+</node>
+
+<node label="AccessControlAllowMethods">
+   <type name="d/AccessControlAllowMethods"/>
+</node>
+
+<node label="AccessControlAllowOrigin">
+   <type name="d/AccessControlAllowOrigin"/>
+</node>
+
+<node label="AccessControlMaxAge">
+   <type name="d/AccessControlMaxAge"/>
+</node>
+
+<node label="AccessControlRequestHeaders">
+   <type name="d/AccessControlRequestHeaders"/>
+</node>
+
+<node label="AccessControlRequestMethod">
+   <type name="d/AccessControlRequestMethod"/>
+</node>
+
+<node label="Cookie">
+   <type name="d/Cookie"/>
+</node>
+
+<node label="GOOD">
+   <type name="d/GOOD"/>
+</node>
+
+<node label="ORIGINAWARE">
+   <type name="d/ORIGINAWARE"/>
+</node>
+
+<node label="OriginHeader">
+   <type name="d/OriginHeader"/>
+</node>
+
+<node label="SECURE">
+   <type name="d/SECURE"/>
+</node>
+
+<node label="WEBATTACKER">
+   <type name="d/WEBATTACKER"/>
+</node>
+
+<node label="location">
+   <type name="d/location"/>
+</node>
+
+<node shape="Dbl Octagon" label="XMLHTTPRequest">
+   <type name="d/XMLHTTPRequest"/>
+</node>
+
+<node shape="Ellipse" label="c200">
+   <type name="d/c200"/>
+</node>
+
+<node shape="Hexagon" label="FormElement">
+   <type name="d/FormElement"/>
+</node>
+
+<node shape="Inv House" label="HTTPResponse">
+   <type name="d/HTTPResponse"/>
+</node>
+
+<node shape="Inv Trapezoid" label="PreFlightRequest">
+   <type name="d/PreFlightRequest"/>
+</node>
+
+<node shape="Inv Triangle" label="HTTPRequest">
+   <type name="d/HTTPRequest"/>
+</node>
+
+<node shape="Lined Square" label="HTTPServer">
+   <type name="d/HTTPServer"/>
+</node>
+
+<node shape="Octagon" label="XDomainRequest">
+   <type name="d/XDomainRequest"/>
+</node>
+
+<node shape="Tpl Octagon" label="XMLHTTPRequest2">
+   <type name="d/XMLHTTPRequest2"/>
+</node>
+
+<node style="Bold">
+   <set name="First" type="d/ordering/Ord"/>
+   <set name="Next" type="d/ordering/Ord"/>
+   <set name="post" type="d/Event"/>
+   <set name="pre" type="d/Event"/>
+</node>
+
+<node visible="no">
+   <type name="d/certificateAuthority"/>
+   <type name="d/Firefox"/>
+   <type name="d/InternetExplorer7"/>
+   <type name="d/InternetExplorer8"/>
+   <type name="d/Method"/>
+   <type name="d/Path"/>
+   <type name="d/RedirectionStatus"/>
+   <type name="d/Safari"/>
+   <type name="d/Schema"/>
+   <type name="d/open$2/Ord"/>
+   <type name="d/open$3/Ord"/>
+   <type name="d/ordering/Ord"/>
+</node>
+
+<node visible="no" numberatoms="no" shape="Box" color="Gray" label="DNSRoot">
+   <type name="d/DNSRoot"/>
+</node>
+
+<node visible="no" numberatoms="no" shape="Parallelogram" color="Red" label="DNS">
+   <type name="d/DNS"/>
+</node>
+
+<node visible="yes">
+   <type name="d/Secret"/>
+</node>
+
+<node visible="yes" hideunconnected="no">
+   <type name="d/Certificate"/>
+</node>
+
+<node visible="yes" numberatoms="yes" color="Blue">
+   <type name="d/Status"/>
+</node>
+
+<edge color="Gray" constraint="no">
+   <relation name="Next"> <type name="d/open$2/Ord"/> <type name="d/Schema"/> <type name="d/Schema"/> </relation>
+   <relation name="Next"> <type name="d/open$3/Ord"/> <type name="d/Path"/> <type name="d/Path"/> </relation>
+</edge>
+
+<edge color="Gray" visible="no" attribute="no" constraint="no">
+   <relation name="allowedMethods"> <type name="d/AccessControlAllowMethods"/> <type name="d/Method"/> </relation>
+</edge>
+
+<edge color="Gray" visible="no" attribute="yes" constraint="no">
+   <relation name="$trSchema"> <type name="d/HTTPTransaction"/> <type name="d/Schema"/> </relation>
+   <relation name="First"> <type name="d/open$2/Ord"/> <type name="d/Schema"/> </relation>
+   <relation name="First"> <type name="d/open$3/Ord"/> <type name="d/Path"/> </relation>
+   <relation name="method"> <type name="d/HTTPRequest"/> <type name="d/Method"/> </relation>
+   <relation name="path"> <type name="d/HTTPRequest"/> <type name="d/Path"/> </relation>
+   <relation name="requestedMethod"> <type name="d/AccessControlRequestMethod"/> <type name="d/Method"/> </relation>
+   <relation name="schema"> <type name="d/Origin"/> <type name="d/Schema"/> </relation>
+   <relation name="targetPath"> <type name="d/location"/> <type name="d/Path"/> </relation>
+   <relation name="trustedCA"> <type name="d/HTTPClient"/> <type name="d/certificateAuthority"/> </relation>
+</edge>
+
+<edge layout="yes">
+   <relation name="parent"> <type name="d/DNS"/> <type name="d/DNS"/> </relation>
+</edge>
+
+<edge visible="no">
+   <relation name="allowedHeaders"> <type name="d/AccessControlAllowHeaders"/> <type name="d/HTTPRequestHeader"/> </relation>
+   <relation name="host"> <type name="d/Event"/> <type name="d/Origin"/> </relation>
+   <relation name="owner"> <type name="d/ScriptContext"/> <type name="d/Origin"/> </relation>
+</edge>
+
+<edge visible="no" attribute="no">
+   <relation name="dnslabel"> <type name="d/Origin"/> <type name="d/DNS"/> </relation>
+   <relation name="dnslabels"> <type name="d/Principal"/> <type name="d/DNS"/> </relation>
+</edge>
+
+<edge visible="no" attribute="yes">
+   <relation name="$DNSOwnedBy"> <type name="d/DNS"/> <type name="d/Principal"/> </relation>
+   <relation name="$DNSownerServers"> <type name="d/DNS"/> <type name="d/NetworkEndpoint"/> </relation>
+   <relation name="$httpreqOrigin"> <type name="d/HTTPRequest"/> <type name="d/Principal"/> </relation>
+   <relation name="$requestTo_http"> <type name="d/HTTPRequest"/> <type name="d/Principal"/> </relation>
+   <relation name="$responseFrom_actual"> <type name="d/HTTPResponse"/> <type name="d/Principal"/> </relation>
+   <relation name="$responseFrom_http"> <type name="d/HTTPResponse"/> <type name="d/Principal"/> </relation>
+   <relation name="$scOwner"> <type name="d/ScriptContext"/> <type name="d/Principal"/> </relation>
+   <relation name="ca"> <type name="d/Certificate"/> <type name="d/certificateAuthority"/> </relation>
+   <relation name="cause"> <type name="d/HTTPTransaction"/> <type name="d/RequestAPI"/> </relation>
+   <relation name="cert"> <type name="d/HTTPTransaction"/> <type name="d/Certificate"/> </relation>
+   <relation name="cn"> <type name="d/Certificate"/> <type name="d/DNS"/> </relation>
+   <relation name="from"> <type name="d/Event"/> <type name="d/NetworkEndpoint"/> </relation>
+   <relation name="headers"> <type name="d/HTTPRequest"/> <type name="d/HTTPRequestHeader"/> </relation>
+   <relation name="headers"> <type name="d/HTTPResponse"/> <type name="d/HTTPResponseHeader"/> </relation>
+   <relation name="headers"> <type name="d/XMLHTTPRequest"/> <type name="d/HTTPRequestHeader"/> </relation>
+   <relation name="location"> <type name="d/ScriptContext"/> <type name="d/HTTPClient"/> </relation>
+   <relation name="ne"> <type name="d/Certificate"/> <type name="d/NetworkEndpoint"/> </relation>
+   <relation name="resolvesTo"> <type name="d/DNS"/> <type name="d/NetworkEndpoint"/> </relation>
+   <relation name="servers"> <type name="d/Principal"/> <type name="d/NetworkEndpoint"/> </relation>
+   <relation name="statusCode"> <type name="d/HTTPResponse"/> <type name="d/Status"/> </relation>
+</edge>
+
+<edge visible="no" layout="yes" attribute="yes">
+   <relation name="parent"> <type name="d/DNS"/> <type name="d/DNSRoot"/> </relation>
+</edge>
+
+</view>
+
+</alloy>
